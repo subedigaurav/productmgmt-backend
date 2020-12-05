@@ -6,4 +6,4 @@
 2. REST API implementations of routes
 3. Middlewares for logging request, advanced result querying and searching
 
-### _Start server: `npm start`_
+### _The API server is live at: https://productmgmt-backend.herokuapp.com/_
