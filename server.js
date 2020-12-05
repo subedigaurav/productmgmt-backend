@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 const morgan = require("morgan");
 const cors = require("cors");
 const connectDB = require("./utils/connectDB");
@@ -23,6 +24,9 @@ app.use(morgan("dev"));
 
 //* body-parser middleware
 app.use(express.json());
+
+//* serve static folder
+app.use(express.static(path.join(__dirname, "public")));
 
 //* mount routes
 app.use("/api/products", products);
